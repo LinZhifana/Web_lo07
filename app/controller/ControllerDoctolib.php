@@ -10,5 +10,7 @@ class ControllerDoctolib{
         }
         require ($vue);
     }
+    
+    
 }
 

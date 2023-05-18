@@ -4,7 +4,8 @@
 <body>
   <div class="container">
     <?php
-    include 'fragment/fragmentDoctolibMenu.html';
+    include 'menu/menu.php';
+
     include 'fragment/fragmentDoctolibJumbotron.html';
     ?>
   </div>   
