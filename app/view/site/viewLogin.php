@@ -9,9 +9,10 @@ require ($root . '/app/view/fragment/fragmentDoctolibHeader.html');
       include $root . '/app/view/fragment/fragmentDoctolibJumbotron.html';
     ?> 
       <h3 style="color: red">Formulaire de connecxion </h3>
-      <form role="form" method='get' action='router1.php'>
+      <form role="form" method='get' action='router.php'>
       <div class="form-group">
-        <input type="hidden" name='action' value='readOne'>        
+         <!--这里的logged是函数名-->
+        <input type="hidden" name='action' value='logged'>           
         <label class='w-25' for="login">login : </label><input type="text" name='login' > <br/>                          
         <label class='w-25' for="password">password : </label><input type="password" name='password'> <br/> 
       </div>
