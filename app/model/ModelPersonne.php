@@ -214,7 +214,7 @@ class ModelPersonne {
             $database = Model::getInstance();
             $query = "select distinct p2.nom, p2.prenom, p2.adresse "
                     . "from personne p1, personne p2, rendezvous "
-                    . "where p1.id = 60 and p1.id = rendezvous.praticien_id "
+                    . "where p1.id = :id and p1.id = rendezvous.praticien_id "
                     . "and rendezvous.patient_id = p2.id and rendezvous.patient_id <> 0;";
             $statement = $database->prepare($query);
             $statement->execute([

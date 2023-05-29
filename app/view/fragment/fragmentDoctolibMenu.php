@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-success fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="router1.php?action=CaveAccueil">Zihang-Zhifan
+        <a class="navbar-brand" href="router.php?action=doctolibAccueil">Zihang-Zhifan
             <?php
                 if(isset($personne)){                    
                     printf("|%s|", $personne->getStatutString());
@@ -33,7 +33,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Se connecter</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="router.php?action=login">Login</a></li>
+                        <?php
+                            if(!isset($personne)){
+                                echo "<li><a class=\"dropdown-item\" href=\"router.php?action=login\">Login</a></li>";
+                            }
+                        ?>
                         <li><a class="dropdown-item" href="router.php?action=specReadLabel">s'inscrire</a></li>
                         <li><a class="dropdown-item" href="router.php?action=logout">deconnection</a></li> 
                     </ul>
