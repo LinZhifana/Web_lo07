@@ -23,6 +23,8 @@ switch ($action) {
     case "logged":
     case "logout":
     case "personneCreated":
+    case "innvo1":
+    case "innvo2":
         ControllerDoctolib::$action();
         break;
     

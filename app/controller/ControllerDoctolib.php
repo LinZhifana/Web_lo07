@@ -99,6 +99,26 @@ class ControllerDoctolib {
      // ----- Construction chemin de la vue
      self::personneReadAll();
     }
+    
+     public static function innvo1() {
+        include 'config.php';
+        $vue = $root . '/app/view/site/viewInnov1.php';
+        if (DEBUG) {
+            echo ("ControllerDoctolib : viewInnvo1 : vue = $vue");
+        }
+        require ($vue);
+    }
+    
+    public static function innvo2() {
+        include 'config.php';
+        $vue = $root . '/app/view/site/viewInnov2.php';
+        if (DEBUG) {
+            echo ("ControllerDoctolib : innvo2 : vue = $vue");
+        }
+        require ($vue);
+    }
 }
+
+
 
 ?>

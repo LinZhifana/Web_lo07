@@ -24,9 +24,9 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Innovations</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="router.php?action=">Liste des vins</a></li>
-                        <li><a class="dropdown-item" href="router.php?action=">Sélection d'un vin par son id</a></li>
-                        <li><a class="dropdown-item" href="router.php?action=">Insertion d'un vin</a></li> 
+                        <li><a class="dropdown-item" href="router.php?action=innvo1">Proposez une utilisation originale et innovante des données contenues dans la base</a></li>
+                        <li><a class="dropdown-item" href="router.php?action=innvo2">Proposez une amélioration du code MVC proposé en cours</a></li>
+                        
                     </ul>
                 </li>
 
