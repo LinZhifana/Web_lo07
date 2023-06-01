@@ -55,6 +55,7 @@ class ControllerDoctolib {
         if (!empty($personne)) {
             $vue = $root . '/app/view/viewDoctolibAccueil.php';
         } else {
+            echo '<script>alert("The username or password is incorrect!");</script>';
             $vue = $root . '/app/view/site/viewLogin.php';
         }
         if (DEBUG) {

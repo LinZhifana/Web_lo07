@@ -14,17 +14,27 @@ require ($root . '/app/view/fragment/fragmentDoctolibHeader.html');
                 <input type="hidden" name='action' value='updateRDV'> 
                 <label>DATE:</label> <br/>
                 <select id="rdv" name="rdv">
-                    <?php                    
-                    foreach ($rdvs as $rdv) {
+                    <?php       
+                    if(!empty($rdvs)){
+                        foreach ($rdvs as $rdv) {
                         printf("<option value=\"%s\">%s</option>",
                                 $rdv->getId(),$rdv->getRdv_date());
+                        }
                     }
+
                     ?>
                 </select>                
             </div>
             <p/>
             <br/> 
-            <button class="btn btn-primary" type="submit">Go</button>
+            <?php 
+            if(empty($rdvs)) {
+                echo "<button class=\"btn btn-primary\" type=\"submit\" disabled >Go</button>";
+            }
+            else {
+                echo "<button class=\"btn btn-primary\" type=\"submit\">Go</button>";
+            }
+            ?>
         </form>
         <p/>
     </div>
